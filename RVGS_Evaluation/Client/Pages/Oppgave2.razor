@@ -1,0 +1,28 @@
+﻿@page "/oppgave2"
+@using Evaluation.Client.Services
+
+<h3>Oppgave2</h3>
+
+<NumericEdit TValue="double" @bind-Value="@speed1" />
+
+
+@code {
+    double speed1;
+
+    [Inject] private IMaritimeCalculator calculatorSerivce { get; set; }
+
+    private async Task Calculate()
+    {
+        //1. Gjør om knopp til km/t for skip 1
+        double kmh1 = await calculatorSerivce.ConvertKnotsToKmh(speed1);
+        
+        //2. Gjør om knopp til km/t for skip 2
+        //double kmh2 = await ....
+
+        //3. Beregn kollisjonstid mellom skipene
+        //var res = await calculatorSerivce.CalculateCollitionTime(....)
+        
+        //4.Skriv ut resultat på siden
+
+    }
+}

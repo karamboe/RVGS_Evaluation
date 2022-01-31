@@ -1,0 +1,59 @@
+﻿@page "/"
+@using Blazorise
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hei alle sammen!</h1>
+
+Velkommen til evalueringsapplikasjonen!
+
+<h2>Oppgave 1</h2>
+<p>
+På siden oppgave1 legger du inn et felt som kan ta en liste med tall. Skill tallene med , (komma)<br/>
+Legg til en knapp og den skal gjøre følgende: <br/>
+•	Sortere og skrive ut listen sortert. Både stigende og synkende. <br/>
+•	Finn det største og minste tallet. <br/>
+•	Finn summen av tallene<br/>
+•	Finn snittet av tallene. <br/><br/>
+Resultatet etter at du har trykket på knappen kan være noe slikt som dette: <br/>
+Sortert stignede: 1,2,3,4,5<br/>
+Sortert synkende: 5,4,3,2,1<br/>
+Største tallet er: 5<br/>
+Minste tallet er: 1<br/>
+Summen av tallene er 15<br/>
+Snittet er: 3<br/>
+</p>
+
+<h2>Oppgave 2</h2>
+<p>
+    Vi har fått i oppdrag å hjelpe hurtigruta med en problemstilling. <br/>
+    Hurtigruta har nordgående og sørgående ruter fra Bergen til Kirkenes. <br/>
+    Mellom de ulike byene / havnene møtes nordgående og sørgående rute. <br/>
+    Akkurat når den møtes er litt uklart og de trenger derfor et system som kan beregne dette for dem.<br/><br/>
+    
+På siden oppgave2 legger du inn felt der du kan angi hastighet i knop til nordgående hurtigrute og sørgående hurtigrute. <br/>
+Vi trenger også et felt for å angi avstanden i km mellom de ulike havnene. <br/>
+Programmet du lager skal ta imot hastighet i knop fra begge skipene samt avstanden mellom de i km. <br/>
+Når en så trykker på en knapp, skal det beregnes hvor lang tid (i minutter) det tar før de møtes. <br/><br/>
+
+1.	Fullfør WEB API / metode i prosjektet som har en metode som beregner km/t fra knop. Du sender inn knop og får ut kmt. <br/>
+(Hint: Formelen for å gjøre om knop til km/t er:  km/h = knop * 1.852)<br/><br/>
+
+2.	Benytt WEB API / metode i eksisterende API som finner tiden det tar før de to skipene møtes. <br/>
+Du sender inn hastighet på skip1, skip2 og avstanden mellom de. <br/>
+(Hint: Del avstanden på summen av hastigheter og gang med minutter i en time. )<br/><br/>
+
+3.	Lag en side i klient prosjektet der du legger inn hastighet skip1 i knop, hastighet skip2 i knop, avstand mellom skipene i km. <br/>
+En knapp for å beregne. <br/>
+Når en trykker på knappen skal du kalle APIet for å beregne farten i km/t og så kalle APIet for å finne tiden det tar før de møtes. 
+<br/>
+
+</p>
+
+<br/>
+<br/>
+<h3>Når du er ferdig pakker du ned prosjektet i en zip fil og leverer denne</h3>
+
+@code
+{    
+}
