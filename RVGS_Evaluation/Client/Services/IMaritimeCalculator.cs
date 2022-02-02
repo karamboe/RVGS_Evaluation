@@ -1,5 +1,4 @@
-﻿using Evaluation.Shared;
-
+﻿
 namespace Evaluation.Client.Services
 {
     public interface IMaritimeCalculator

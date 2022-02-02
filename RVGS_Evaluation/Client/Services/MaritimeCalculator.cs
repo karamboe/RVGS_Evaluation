@@ -1,5 +1,4 @@
-﻿using Evaluation.Shared;
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
 
 namespace Evaluation.Client.Services
 {

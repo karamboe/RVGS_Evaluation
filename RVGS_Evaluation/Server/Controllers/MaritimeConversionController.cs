@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Evaluation.Server.Services;
-using Evaluation.Shared;
 
 namespace Evaluation.Server.Controllers
 {
